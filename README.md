@@ -21,10 +21,14 @@ mvn clean package
 
 ## Running the adaptor as a docker container
 ```
-docker run -e KETO_URL=http://localhost:4466 gcr.io/kf-feast/feast-keto-auth-server:latest
+docker run \
+    -e KETO_URL=http://localhost:4466 \
+    gcr.io/kf-feast/feast-keto-auth-server:latest
 ```
 
 ## Building the docker container
 ```
-docker build . -t gcr.io/kf-feast/feast-keto-auth-server:latest -t gcr.io/kf-feast/feast-keto-auth-server:0.0.1
+docker build . \ 
+    -t gcr.io/kf-feast/feast-keto-auth-server:latest \
+    -t gcr.io/kf-feast/feast-keto-auth-server:0.0.1
 ```
