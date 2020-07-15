@@ -1,6 +1,9 @@
 # Feast Keto Authorization Adaptor
 
-This application acts as an external HTTP authorization adaptor/proxy for Feast to integrate with [Keto](https://github.com/ory/keto). This repository serves as both an example implementation and is used for integration tests.
+This application acts as an external HTTP authorization adaptor/proxy for Feast to integrate with [Keto](https://github.com/ory/keto).
+
+> :warning: **This repository is purely an example and should not be used in production!**
+
 
 ## Running the adaptor
 
