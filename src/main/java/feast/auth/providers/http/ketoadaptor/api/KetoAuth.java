@@ -47,7 +47,7 @@ public class KetoAuth {
     try {
       getHealthzApi().isInstanceReady();
     } catch (ApiException e) {
-      throw new RuntimeException("Could not connect to Keto server.");
+      throw new RuntimeException(String.format("Could not connect to Keto server: %s", url));
     }
   }
 
